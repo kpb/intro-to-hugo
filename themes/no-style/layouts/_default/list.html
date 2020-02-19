@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="section-meta">      
+  Section Title: <b>{{.Title}}</b>
+  {{.Content}}
+</div>
+<div class="section-pages">
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <a href="{{.Permalink}}">{{.Title}}</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
