@@ -1,5 +1,5 @@
 ---
-title: "Homepage"
+title: "Intro To Hugo"
 date: 2019-12-15T19:11:35-07:00
 draft: false
 ---
