@@ -6,7 +6,7 @@ draft: false
 
 # Colophon #
 
-We made this with Hugo.
+We made this with Hugo. (/content/colophon.md).
 
 Nam odio enim, feugiat vitae ligula nec, hendrerit varius quam. Integer lorem turpis, vulputate eget neque sit amet,
 viverra rutrum est. Mauris non justo rhoncus, viverra diam eu, lobortis nunc. Nulla vel tincidunt eros, id consectetur

@@ -6,6 +6,8 @@ draft: false
 
 # Homepage Content #
 
+This is the 'homepage' (/content/_index.html).
+
 Sed eget pharetra metus. Vestibulum ac ex mattis, placerat felis non, dapibus leo. Proin ultricies rhoncus nisl, a
 varius orci scelerisque lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lectus dolor, luctus
 in nibh molestie, malesuada faucibus nulla. Donec pretium aliquet sapien, at tincidunt erat. Pellentesque habitant morbi

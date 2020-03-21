@@ -6,6 +6,8 @@ draft: false
 
 # All about content, no style! #
 
+The 'about' page /content/about.md
+
 Maecenas sed lacinia felis, sed vehicula nisi. Sed pulvinar interdum mi, ut semper leo consectetur at. Fusce quis sem
 venenatis ipsum fermentum lobortis vitae non sapien. Donec viverra ornare ligula, nec tempor metus iaculis in. Quisque
 et turpis eu sapien facilisis volutpat sit amet nec erat. Duis vitae sapien dictum, vehicula tortor eget, cursus
