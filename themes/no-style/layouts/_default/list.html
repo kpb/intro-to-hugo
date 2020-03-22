@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-<div class="section-meta">      
-  Section Title: <b>{{.Title}}</b>
+<div>
+  <p>Rendered by /layouts/_default/list.html</p>
+
   {{.Content}}
-</div>
-<div class="section-pages">
+  
   <ul>
     {{ range .Pages }}
     <li>
@@ -13,4 +13,5 @@
     {{ end }}
   </ul>
 </div>
+
 {{ end }}

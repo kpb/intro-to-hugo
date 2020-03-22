@@ -1,11 +1,22 @@
 {{ define "main" }}
 
-<div class="homepage-content">
+<div>
   <hr />
   <p>
     Rendered by /layouts/index.html
   </p>
   {{.Content}}
+
+  <!-- Display all the 'posts' in our blog section -->
+  {{ range where .Site.RegularPages "Section" "blog" }}
+
+  <h4><a href="{{.RelPermalink}}">{{.Title}}</a></h4>
+  <p>{{ .PublishDate.Format "2 January 2006" }}</p>
+  <p>{{ .Summary }}</p>
+  
+  {{ end }}
+
+
   <hr />
 </div>
 
