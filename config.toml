@@ -2,3 +2,4 @@ baseURL = "http://nostyle.dev.null/"
 languageCode = "en-us"
 title = "No Style Hugo Site"
 theme = "no-style"
+paginate = 3

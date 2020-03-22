@@ -8,7 +8,8 @@
   {{.Content}}
 
   <!-- Display all the 'posts' in our blog section -->
-  {{ range where .Site.RegularPages "Section" "blog" }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+  {{ range $paginator.Pages }}
 
   <h4><a href="{{.RelPermalink}}">{{.Title}} </a> - {{ .PublishDate.Format "2 January 2006" }} </h4>
 
@@ -16,12 +17,30 @@
 
   {{ if .Truncated }}
   <!-- This <div> includes a read more link, but only if the summary is truncated... -->
-  <a href="{{ .RelPermalink }}">Read More…</a>
-  {{ end }}
+    <a href="{{ .RelPermalink }}">Read More…</a>
+    {{ end }}
   </p>
   
   {{ end }}
 
+  <h4>Pagination</div>
+  <p>
+    page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+  </p>
+
+  <p>
+    {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}">previous</a>
+    {{ end }}
+    
+    {{ range $paginator.Pagers }}
+    <a href="{{ .URL | relURL }}">{{ .PageNumber }}</a>&nbsp;&nbsp;|
+    {{ end }}
+
+    {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}">next</a>
+    {{ end }}
+  </p>
 
   <hr />
 </div>
