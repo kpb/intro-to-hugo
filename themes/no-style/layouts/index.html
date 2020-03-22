@@ -10,9 +10,15 @@
   <!-- Display all the 'posts' in our blog section -->
   {{ range where .Site.RegularPages "Section" "blog" }}
 
-  <h4><a href="{{.RelPermalink}}">{{.Title}}</a></h4>
-  <p>{{ .PublishDate.Format "2 January 2006" }}</p>
-  <p>{{ .Summary }}</p>
+  <h4><a href="{{.RelPermalink}}">{{.Title}} </a> - {{ .PublishDate.Format "2 January 2006" }} </h4>
+
+  <p>{{ .Summary }}
+
+  {{ if .Truncated }}
+  <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+  <a href="{{ .RelPermalink }}">Read More…</a>
+  {{ end }}
+  </p>
   
   {{ end }}
 
